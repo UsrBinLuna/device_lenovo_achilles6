@@ -51,4 +51,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/lenovo/achilles6_row_wifi/achilles6_row_wifi-vendor.mk)
+# $(call inherit-product, vendor/lenovo/achilles6_row_wifi/achilles6_row_wifi-vendor.mk)
