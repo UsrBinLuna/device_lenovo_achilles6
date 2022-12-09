@@ -22,8 +22,12 @@ It was released in March 2020.
 ![a6edab04959d1694919d8909978ea33c-3977590543-removebg-preview](https://user-images.githubusercontent.com/67978777/180082440-439e4513-d0bb-4f72-880d-0751ba5b57cf.png)
 ---
 ---
+```
+## License
+
 #
 # Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+```
