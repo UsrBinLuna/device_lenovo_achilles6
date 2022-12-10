@@ -78,6 +78,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.enableswap
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+# Recovery is pain
+TARGET_NO_RECOVERY := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
