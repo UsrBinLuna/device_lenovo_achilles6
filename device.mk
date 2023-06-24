@@ -50,5 +50,10 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Audio policy configuration
+USE_XML_AUDIO_POLICY_CONF := 1
+
+
+
 # Inherit the proprietary files
 # $(call inherit-product, vendor/lenovo/achilles6_row_wifi/achilles6_row_wifi-vendor.mk)

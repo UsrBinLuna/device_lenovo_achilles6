@@ -29,7 +29,9 @@ TARGET_BOOTLOADER_BOARD_NAME := achilles6_row_wifi
 TARGET_NO_BOOTLOADER := true
 
 # Display
-TARGET_SCREEN_DENSITY := 240
+TARGET_SCREEN_DENSITY := 220
+TARGET_SCREEN_WIDTH := 1200
+TARGET_SCREEN_HEIGHT := 1920
 
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 2
@@ -37,6 +39,7 @@ BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x11a88000
+BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET := 0x07808000
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
@@ -94,11 +97,12 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Prebuilt vendor
-BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/prebuilts/vendor.img
+# BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/prebuilts/vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
+
 
 # fix overriding commands for target
 BUILD_BROKEN_DUP_RULES := true
 
 # Inherit the proprietary files
-# include vendor/lenovo/achilles6_row_wifi/BoardConfigVendor.mk
+-include vendor/lenovo/achilles6_row_wifi/BoardConfigVendor.mk
